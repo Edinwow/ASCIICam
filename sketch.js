@@ -1,6 +1,10 @@
-const density = 'Ñ@#W$9876543210?!abc;:+=-,._                         ';
+let density = 'Ñ@#W$9876543210?!abc;:+=-,._                         ';
 let video;
 let asciiDiv;
+
+function setDensity() {
+  density = document.getElementById('density').value;
+}
 
 function setup() {
   noCanvas();
